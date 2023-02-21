@@ -251,9 +251,9 @@ public class Main {
 
 En este ejemplo, la clase Animal es una clase abstracta que define un método hacerSonido() sin implementación. Las clases Perro, Gato y Vaca son subclases de Animal y cada una implementa su propio método hacerSonido(). Luego, en la clase Main, se crea un array de Animal que contiene un objeto de cada una de las subclases, y se llama al método hacerSonido() en cada uno de los objetos del array mediante un bucle for-each. Como cada objeto tiene su propia implementación del método hacerSonido(), el programa produce la salida "Guau guau", "Miau" y "Muuu".
 
-###ALGUNOS ELEMENTOS EXTRAS
+### ALGUNOS ELEMENTOS EXTRAS
 
-###SETTERS y GETTERS
+### SETTERS y GETTERS
 
 Los getters y setters son métodos de acceso que se utilizan para acceder a los atributos de una clase. Un getter es un método que devuelve el valor de un atributo, mientras que un setter es un método que establece el valor de un atributo.
 
@@ -263,7 +263,7 @@ Los getters y setters también son útiles para validar los datos que se asignan
 
 En resumen, los getters y setters son una práctica común en POO para acceder y modificar los atributos de una clase de manera segura y controlada.
 
-###CONSTRUCTOR
+### CONSTRUCTOR
 
 Un constructor en Java es un método especial que se utiliza para inicializar objetos de una clase. Se ejecuta automáticamente cuando se crea un objeto de esa clase y se encarga de asignar valores iniciales a los atributos del objeto. La sintaxis básica de un constructor en Java es la siguiente:
 
