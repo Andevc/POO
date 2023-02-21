@@ -1,10 +1,10 @@
-#PROGRAMACION ORIENTADA A OBJETOS
+# PROGRAMACION ORIENTADA A OBJETOS
 
-##¿QUE ES POO?
+## ¿QUE ES POO?
 
 La programación orientada a objetos (POO) es un paradigma de programación que se basa en la idea de modelar el mundo real a través de la definición de objetos que tienen atributos y métodos que les permiten interactuar entre sí.
 
-##PARTES DEL POO
+## PARTES DEL POO
 
 Las partes fundamentales de la POO son las siguientes:
 
@@ -22,7 +22,7 @@ Las partes fundamentales de la POO son las siguientes:
 
 En resumen, la POO se basa en la creación de clases que definen los atributos y métodos de los objetos que se crean a partir de ellas, y que pueden heredar de otras clases y comportarse de diferentes maneras a través del polimorfismo.
 
-##1. CLASES
+## 1. CLASES
 
 En programación orientada a objetos (POO), una clase es una plantilla que define la estructura, comportamiento y propiedades de un objeto. Las clases se utilizan para crear objetos, que son instancias concretas de la clase.
 
@@ -60,7 +60,7 @@ Dentro de la definición de la clase, se pueden definir atributos, constructores
 
 En la definición de la clase, también se pueden utilizar modificadores de acceso para restringir la visibilidad de los miembros de la clase. Los modificadores de acceso son public, private, protected y default (este último es el modificador por defecto si no se especifica ningún otro).
 
-##2. OBJETOS
+## 2. OBJETOS
 
 En programación orientada a objetos, un objeto es una instancia de una clase que representa un conjunto de datos y comportamientos. En Java, se definen los objetos creando una instancia de una clase utilizando la palabra clave new.
 
@@ -81,7 +81,7 @@ En este ejemplo, hemos utilizado el método getName() de la clase Person para ob
 
 Es importante destacar que cada objeto que se crea utilizando la palabra clave new es independiente de los demás objetos de la misma clase. Cada objeto tiene su propio conjunto de valores de propiedad y métodos de acceso y modificación.
 
-##3. ATRIBUTOS
+## 3. ATRIBUTOS
 
 En Java, los atributos de una clase son las variables que definen las propiedades de los objetos creados a partir de esa clase. También se les conoce como campos o propiedades de la clase.
 
@@ -112,7 +112,7 @@ Para acceder a los atributos de un objeto de la clase Person, se suelen utilizar
 
 En este ejemplo, el método getName() devuelve el valor actual del atributo name, mientras que el método setName() asigna un nuevo valor al atributo name. La palabra clave this se utiliza para referirse al objeto actual, es decir, al objeto person en este caso.
 
-##4. METODOS
+## 4. METODOS
 
 Los métodos en Java son bloques de código que se utilizan para realizar tareas específicas en una clase. Estos métodos pueden ser llamados por otros objetos de la misma clase o por objetos externos a la clase.
 
@@ -168,7 +168,7 @@ public class Persona {
 
 Este método se llama imprimirDatos y no recibe parámetros. Su tipo de retorno es void porque no devuelve ningún valor, sino que simplemente imprime los datos de la persona por consola. Dentro del método se utiliza la palabra clave this para referirse a los atributos de la clase.
 
-##5. HERENCIA
+## 5. HERENCIA
 
 La herencia es un concepto fundamental de la programación orientada a objetos que permite definir nuevas clases basadas en clases ya existentes. En Java, se define la herencia mediante la palabra clave extends.
 
@@ -199,7 +199,7 @@ En este ejemplo, la clase Student extiende la clase Person utilizando la palabra
 
 La herencia permite reutilizar código existente y definir nuevas clases basadas en clases ya existentes, lo que facilita el diseño y la implementación de aplicaciones complejas. Además, la herencia permite establecer relaciones entre clases y organizarlas en jerarquías, lo que puede ayudar a comprender y estructurar el diseño de una aplicación.
 
-##6. POLIMORFISMO
+## 6. POLIMORFISMO
 
 En programación orientada a objetos, el polimorfismo se refiere a la capacidad de un objeto de tomar varias formas o comportarse de varias maneras en tiempo de ejecución. En otras palabras, un objeto puede ser tratado como si fuera de un tipo diferente del que se definió originalmente.
 
