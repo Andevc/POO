@@ -9,11 +9,12 @@ public class Supermercado {
         direccion = "Calle 15 de Mayo, número 321";
         nroProductos = 5;
         //? producto[i][0] = nombre, producto[i][1] = stock, producto[i][2] = precio. 
-        prod[0][0] = "leche"; prod[0][1] = "15"; prod[0][2] = "21";
+        prod[0][0] = "leche"; prod[0][1] = "15"; prod[0][2] = "18";
         prod[1][0] = "pan"; prod[1][1] = "35"; prod[1][2] = "15";
         prod[2][0] = "papel";prod[2][1] = "25"; prod[2][2] = "19";
         prod[3][0] = "arroz";prod[3][1] = "20"; prod[3][2] = "10";
         prod[4][0] = "pasta";prod[4][1] = "30"; prod[4][2] = "14";
+        
     }
 
     public Supermercado(String nombre){
@@ -24,8 +25,9 @@ public class Supermercado {
         prod[0][0] = "arroz"; prod[0][1] = "40"; prod[0][2] = "12";
         prod[1][0] = "aceite"; prod[1][1] = "25"; prod[1][2] = "19";
         prod[2][0] = "jabon";prod[2][1] = "50"; prod[2][2] = "4";
-        prod[3][0] = "leche";prod[3][1] = "40"; prod[3][2] = "30";
+        prod[3][0] = "leche";prod[3][1] = "40"; prod[3][2] = "19";
         prod[4][0] = "pan"; prod[4][1] = "45"; prod[4][2] = "20";
+        
         
     }
 
@@ -55,6 +57,10 @@ public class Supermercado {
         return this.nroProductos;
     }
 
+    public String[][] getProd(){
+        return this.prod;
+    }
+
     public void mayStock(Supermercado s, String x){
         int st1 = 0, st2 = 0;
         for(int i = 0; i < getNroProd(); i++){
@@ -75,8 +81,25 @@ public class Supermercado {
 
     }
 
-    public void nomProd(String x, String y){
-        
+    public void nomProd(String x, String y, Supermercado s){
+        int i = 0, j = 0;
+        String x1 = "", y1 = "";
+        System.out.println("\tEn el Supermecado "+y);
+        for( i = 0; i < getNroProd(); i++){
+            for( j = 0; j < s.getNroProd(); j++){
+                if(getProd()[i][0].equals(s.getProd()[j][0])){ 
+                    if( getNombre().equals(x) &&  s.getNombre().equals(y)){
+                        x1 = getProd()[i][2]; y1 = s.getProd()[j][2];
+                    }
+                    else{
+                        y1 = getProd()[i][2]; x1 = s.getProd()[j][2];
+                    }  
+                    if(Integer.parseInt(x1) > Integer.parseInt(y1) ){
+                        System.out.println("\t\t-"+s.getProd()[j][0]+" es mas barato");
+                    }              
+                }
+            }
+        }
     }
 
     public void vStock(String x){
